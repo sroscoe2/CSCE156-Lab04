@@ -36,11 +36,11 @@ public class PayrollReport {
 				}
 				
 				if(tokens[0].equals("E")) {
-					e = new Employee(); //TODO: modify this
+					e = new SalaryEmployee(); //TODO: modify this
 				} else if(tokens[0].equals("S")) {
-					e = new Employee(); //TODO: modify this
+					e = new Staff(); //TODO: modify this
 				} else if(tokens[0].equals("T")) {
-					e = new Employee(); //TODO: modify this
+					e = new Temporary(); //TODO: modify this
 				}
 				
 				result.add(e);
