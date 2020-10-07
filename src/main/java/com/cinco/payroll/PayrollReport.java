@@ -5,13 +5,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * This is the main driver program that parses the payroll
+ * data file and produces a payroll report.
+ *
+ */
 public class PayrollReport {
 
 	public static List<Employee> parseDataFile() {
 		List<Employee> result = new ArrayList<Employee>();
-		try {
-			File f = new File("data/employee.dat");
-			Scanner s = new Scanner(f);
+		File f = new File("data/employee.dat");
+		try(Scanner s = new Scanner(f)) {
 			while(s.hasNext()) {
 				String line = s.nextLine();
 				if(!line.trim().isEmpty()) {
