@@ -76,9 +76,9 @@ functionality (generalization) defined in the super-class.
 As a class-based object-oriented programming language, Java facilitates
 inheritance through subclassing by using the keyword extends. If class
 *B* `extends` class *A*, *B* is said to be a subclass of *A* (*A* is a
-superclass of *B*). Instances of class $B$ are also instances of class
+superclass of *B*). Instances of class *B* are also instances of class
 *A*, defining an "is-a" relation between them. Java also provides two
-related mechanisms related to subclassing.
+mechanisms related to subclassing.
 
 -   *Abstract Classes* – Java allows you to specify that a class is
     abstract using the keyword `abstract`. In an abstract class, you can define
@@ -110,7 +110,7 @@ and a title. Further, there are two types of employees:
 
 -   Salaried employees – Salaried employees have a base annual salary,
     which is subject to a 20% income tax rate (state, federal and FICA
-    combined). In addition, each salaried employee receives a \$100
+    combined). In addition, each salaried employee receives a $100
     post-tax benefits allowance.
 
 -   Hourly employees – Hourly employees have a per-hour pay rate along
