@@ -141,9 +141,9 @@ representation of classes and their relationships.
 ### 3.1 Class Design & Inheritance 
 
 You have been provided a partially completed program that parses a data
-file (in ) and creates instances of an . However, the class is empty.
-You will need to implement this class and any relevant subclass(es) to
-complete the program.
+file (in `PayrollReport.java`) and creates `Employee` instances. However, the `Employee` 
+class is empty.  You will need to implement this class and any 
+relevant subclass(es) to complete the program.
 
 -   Identify the different classes necessary to model each of the
     different types of employees in the problem statement.
