@@ -1,6 +1,6 @@
 package com.cinco.payroll;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ public class PayrollTests {
 	 * <code>abstract</code>
 	 */
 	@Test
-	void employeeTest() {
+	public void employeeTest() {
 		assertTrue(Modifier.isAbstract(Employee.class.getModifiers()), "Employee must be abstract");
 		assertTrue(Modifier.isAbstract(HourlyEmployee.class.getModifiers()), "Employee must be abstract");
 	}
@@ -32,7 +32,7 @@ public class PayrollTests {
 	 * {@link #HourlyEmployee} class
 	 */
 	@Test
-	void hourlyEmployeeTest() {
+	public void hourlyEmployeeTest() {
 		assertTrue(Modifier.isAbstract(HourlyEmployee.class.getModifiers()));
 		assertEquals(3, HourlyEmployee.class.getDeclaredMethods().length, "Must declare methods as in the UML diagram");
 		assertTrue(Employee.class.isAssignableFrom(HourlyEmployee.class), "Temporary must extend Hourly");
@@ -48,7 +48,7 @@ public class PayrollTests {
 	 * {@link #Temporary} class
 	 */
 	@Test
-	void temporaryEmployeeTest() {
+	public void temporaryEmployeeTest() {
 		assertFalse(Modifier.isAbstract(Temporary.class.getModifiers()));
 		assertEquals(2, Temporary.class.getDeclaredMethods().length, "Must declare methods as in the UML diagram");
 		assertTrue(HourlyEmployee.class.isAssignableFrom(Temporary.class), "Temporary must extend Hourly");
@@ -65,7 +65,7 @@ public class PayrollTests {
 	 * {@link #Staff} class
 	 */
 	@Test
-	void staffTest() {
+	public void staffTest() {
 		assertFalse(Modifier.isAbstract(Staff.class.getModifiers()));
 		assertEquals(2, Staff.class.getDeclaredMethods().length, "Must declare methods as in the UML diagram");
 		assertTrue(HourlyEmployee.class.isAssignableFrom(Staff.class), "Staff must extend HourlyEmployee");
@@ -82,13 +82,13 @@ public class PayrollTests {
 	 * {@link #SalaryEmployee} class
 	 */
 	@Test
-	void salaryTest() {
+	public void salaryTest() {
 		assertFalse(Modifier.isAbstract(SalaryEmployee.class.getModifiers()));
 		assertEquals(4, SalaryEmployee.class.getDeclaredMethods().length, "Must declare methods as in the UML diagram");
 		assertTrue(Employee.class.isAssignableFrom(SalaryEmployee.class), "SalaryEmployee must extend Employee");
 
 		SalaryEmployee staff = new SalaryEmployee("011F42", "Tim", "Heidecker", "President", 120000);
-		assertEquals(2307.69, staff.getGrossPay(), 0.01, "Check how your HourlyEmployee is calculating net pay");
+		assertEquals(2307.69, staff.getGrossPay(), 0.01, "Check how your SalaryEmployee is calculating net pay");
 		assertEquals(461.54, staff.getTaxes(), 0.01, "Check the salary tax calculation ");
 		assertEquals(1946.15, staff.getNetPay(), 0.01, "Check how your Employee is calculating net pay");
 		assertEquals("Salary", staff.getType(), "Are you sure you are storing the correct type?");
@@ -99,7 +99,7 @@ public class PayrollTests {
 	 * {@link #Payable} interface
 	 */
 	@Test
-	void payableTest() {
+	public void payableTest() {
 		assertTrue(new ArrayList<>(Arrays.asList(Employee.class.getInterfaces())).contains(Payable.class),
 				"Employee must implement the Payable Interface");
 		assertTrue(new ArrayList<>(Arrays.asList(Supplier.class.getInterfaces())).contains(Payable.class),
