@@ -108,7 +108,7 @@ simulates a basic weekly payroll reporting system for the Cinco
 Corporation. Every employee has an employee ID, a name (first and last),
 and a title. Further, there are two types of employees:
 
--   Salaried employees – Salaried employees have a base annual salary,
+-   Salaried employees (type: `"Salary"`) – Salaried employees have a base annual salary,
     which is subject to a 20% income tax rate (state, federal and FICA
     combined). In addition, each salaried employee receives a $100
     post-tax benefits allowance.
@@ -118,10 +118,10 @@ and a title. Further, there are two types of employees:
     employees do not receive any benefit allowance. Further, there are
     two types of hourly employees.
 
-    -   Staff employees are directly employed by Cinco and are subject
+    -   Staff employees (type: `"Staff"`) are directly employed by Cinco and are subject
         to a 15% income tax rate.
 
-    -   Temporary employees are not directly employed by Cinco, but
+    -   Temporary employees (type: `"Temporary"`) are not directly employed by Cinco, but
         instead are contracted through a third-party temp agency who is
         responsible for collecting taxes (thus no taxes are taken from
         their gross pay).
@@ -135,7 +135,7 @@ representation of classes and their relationships.
 <p align="center">
 <img src="images/ProjectUML.png" 
      alt="UML Diagram of a potential design for the Cinco Corporation payroll system" 
-     width="75%"/>
+     width="90%"/>
 </p>  
 
 ### 3.1 Class Design & Inheritance 
@@ -161,7 +161,7 @@ relevant subclass(es) to complete the program.
 -   Some state/behavior may be common to several classes–is there an
     opportunity to define an intermediate class?
 
--   If you need more guidance, consult the UML diagram below on one
+-   If you need more guidance, consult the UML diagram for one
     possible design.
 
 -   To check your work, a text file containing the expected output has
@@ -190,16 +190,16 @@ implicitly `extends Object` and the no-arg constructor is invoked.
 
 Now that you have a well designed, functional implementation we will
 improve on the design by identifying potential abstractions that can be
-made. Start by making the `Employee` class abstract. If you had a
+made. Start by making the `Employee` class `abstract`. If you had a
 good design, then nothing should break; the model did not have any
-generic employee–all employees were of a specific type. If something did
+generic employee.  All employees were of a specific type. If something did
 break in your code, rethink your design and make the appropriate
 changes.
 
 Identify one or more methods in the `Employee` class that could be made
-abstract. That is, are there any methods in the superclass where it
-would not be appropriate to have a "default" definition? Make these
-methods abstract and again make any appropriate changes to your design
+`abstract`. Are there any methods in the superclass where it
+would *not* be appropriate to have a "default" definition? Make these
+methods `abstract` and again make any appropriate changes to your design
 as necessary.
 
 ### 3.3 Adding an Interface
@@ -208,9 +208,9 @@ Cinco Corporation also has suppliers that they purchase supplies and
 parts from to build their products. Suppliers have a company name and an
 amount due, and so need to be paid, but they are not employees. However,
 the payroll department would like to have a common interface across all
-objects in their system that are, in some way, payable.
+entities/objects in their system that are, in some way, payable.
 
-1.  Create an interface (In Eclipse: right click the package
+1.  Create an `interface` (in Eclipse: right click the package
     then "new" then "Interface") called `Payable`. Identify a
     single method in this interface that returns the (net) amount
     payable
@@ -218,7 +218,7 @@ objects in their system that are, in some way, payable.
 2.  Make the `Employee` class implement this new interface and make the appropriate
     changes if necessary
 
-3.  Create a new class to represent suppliers and also make it `Payable`
+3.  Create a new class, `Supplier` to represent suppliers and also make it `Payable`
 
 
 ### 4. Testing, Submitting & Grading
