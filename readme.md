@@ -136,7 +136,14 @@ representation of classes and their relationships.
 <img src="images/ProjectUML.png" 
      alt="UML Diagram of a potential design for the Cinco Corporation payroll system" 
      width="90%"/>
-</p>  
+</p>
+
+Observe that:
+
+- Inheritance is indicated by the arrows
+- Abstract classes and methods have a small "A" in the icon
+- Public methods have a green icon and private member variables have red icons
+- Method parameters and return types are labeled 
 
 ### 3.1 Class Design & Inheritance 
 
