@@ -1,9 +1,11 @@
 # Computer Science II
-## Lab 5.0 - Inheritance
+## Lab 4.0 - Inheritance
 
 An introduction to using inheritance in the Java programming language.
 
 This is a lab used in Computer Science II (CSCE 156, CSCE 156H) in the [Department of Computer Science & Engineering](https://cse.unl.edu) at the [University of Nebraska-Lincoln](https://unl.edu).
+
+Chris Bourke wrote this lab, revamped by Sarah Roscoe for Summer 2021.
 
 ## Overview
 
@@ -32,37 +34,20 @@ Following the lab, you should:
 
 ### Peer Programming Pair-Up
 
-To encourage collaboration and a team environment, labs will be
-structured in a *pair programming* setup.  At the start of
-each lab, you may be randomly paired up with another student by
-a lab instructor.  One of you will be designated the *driver* 
-and the other the *navigator*.  
+You may work on this lab with a partner or by yourself. Whichever you choose, you should submit your code to the corresponding Handin assignment. Handin link: https://cse-apps.unl.edu/handin
 
-The navigator will be responsible for reading the instructions 
-and telling the driver what is to be done.  The driver will be 
-in charge of the keyboard and workstation.  Both driver and 
-navigator are responsible for suggesting fixes and solutions 
-*together*.  Neither the navigator nor the driver is "in charge."  
-Beyond your immediate pairing, you are encouraged to help and 
-interact and with other pairs in the lab.
+If you attend lab over Zoom, you may work in a a pair programming setup. At the start of each lab, you may be randomly paired up with another student by a lab instructor. One of you will be designated the driver and the other the navigator.
 
-Each week you should try to alternate: if you were a driver 
-last week, be a navigator next, etc.  Resolve any issues (you 
-were both drivers last week) within your pair.  Ask the lab 
-instructor to resolve issues only when you cannot come to a 
-consensus.  
+The navigator will be responsible for reading the instructions and telling the driver what is to be done. The driver will be in charge of the keyboard and workstation (on Zoom, this means the driver shares their screen). Both driver and navigator are responsible for suggesting fixes and solutions together. Neither the navigator nor the driver is "in charge." Beyond your immediate pairing, you are encouraged to help and interact and with other pairs in the lab.
 
-Because of the peer programming setup of labs, it is absolutely 
-essential that you complete any pre-lab activities and familiarize
-yourself with the handouts prior to coming to lab.  Failure to do
-so will negatively impact your ability to collaborate and work with 
-others which may mean that you will not be able to complete the
-lab.  
+Each week you should try to alternate: if you were a driver last week, be a navigator next, etc. Resolve any issues (you were both drivers last week) within your pair. Ask the lab instructor to resolve issues only when you cannot come to a consensus.
+
+Because of the peer programming setup of labs, it is absolutely essential that you complete any pre-lab activities and familiarize yourself with the handouts prior to coming to lab. Failure to do so will negatively impact your ability to collaborate and work with others which may mean that you will not be able to complete the lab. 
 
 ## 1. Getting Started
 
 Clone this project code for this lab from GitHub in Eclipse using the
-URL: https://github.com/cbourke/CSCE156-Lab05. Refer to Lab 1.0 for
+URL: https://github.com/sroscoe2/CSCE156-Lab04.git. Refer to Lab 1.0 for
 instructions on how to clone a project from GitHub.
 
 ## 2. Inheritance
@@ -267,4 +252,6 @@ errors and completely debug your programs.
         -   Generate class diagram instructions:  
             <http://www.objectaid.com/class-diagram>
 
+## 5. Expected Output
 
+See [the text expected output](https://github.com/sroscoe2/CSCE156-Lab04/blob/master/output/expectedOutput.txt) or [the expected ouputs file](https://github.com/sroscoe2/CSCE156-Lab04/blob/master/Lab4ExpectedOutputs.pdf) for additional information.
