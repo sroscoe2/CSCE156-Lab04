@@ -16,12 +16,12 @@ Prior to lab you should read/review the following resources.
 -  Read the following tutorial on inheritance in Java  
    <http://download.oracle.com/javase/tutorial/java/IandI/subclasses.html>
 
+-  Read about interfaces in Java  
+   <http://download.oracle.com/javase/tutorial/java/IandI/createinterface.html>
+
 -  Read about abstract methods and abstract classes in Java  
    <http://download.oracle.com/javase/tutorial/java/IandI/abstract.html>
 
--  Read about interfaces in Java  
-   <http://download.oracle.com/javase/tutorial/java/IandI/createinterface.html>
-   
 ### Lab Objectives & Topics
 
 Following the lab, you should:
