@@ -5,7 +5,7 @@ An introduction to using inheritance in the Java programming language.
 
 This is a lab used in Computer Science II (CSCE 156, CSCE 156H) in the [Department of Computer Science & Engineering](https://cse.unl.edu) at the [University of Nebraska-Lincoln](https://unl.edu).
 
-Chris Bourke wrote this lab, revamped by Sarah Roscoe for Summer 2021 and 2022.
+Chris Bourke wrote this lab, revamped by Sarah Roscoe for Summer 2021 - 2023.
 
 ## Overview
 
@@ -129,6 +129,22 @@ Observe that:
 - Abstract classes and methods have a small "A" in the icon
 - Public methods have a green icon and private member variables have red icons
 - Method parameters and return types are labeled 
+
+### Note:
+
+
+The net pay is the gross pay minus taxes.
+The gross pay depends on the employee type:
+
+1. Hourly rate times hours worked.
+2. Annual salary divided by number of weeks in the year.
+
+The tax is calculated differently, based on the employee type:
+
+1. No tax
+2. hourly rate times hours worked times tax rate
+3. Take 20% of the annual salary, then divide it by the number of weeks in the year
+
 
 ### 3.1 Class Design & Inheritance 
 
