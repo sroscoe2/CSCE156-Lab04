@@ -258,15 +258,8 @@ errors and completely debug your programs.
     -   Read the following tutorial on using UML for class diagrams:
         <http://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/>
 
-    -   Install an Eclipse plugin for UML and generate a UML diagram for
-        your project. The choice is yours, but one (free) possibility is
-        ObjectAid UML:
+    -   Install an Eclipse plugin for UML and generate a UML diagram for your project. We have provided a recommendation and instructions here: https://github.com/cbourke/ComputerScienceII/blob/master/resources/uml.md
 
-        -   Installation instructions:  
-            <https://www.objectaid.com/install-objectaid>
-
-        -   Generate class diagram instructions:  
-            <http://www.objectaid.com/class-diagram>
 
 ## 5. Expected Output
 
