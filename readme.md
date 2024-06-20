@@ -13,14 +13,14 @@ Chris Bourke wrote this lab, revamped by Sarah Roscoe for Summer 2021 - 2023.
 
 Prior to lab you should read/review the following resources.
 
--  Read the following tutorial on inheritance in Java  
-   <http://download.oracle.com/javase/tutorial/java/IandI/subclasses.html>
+-  Read the following tutorial on inheritance in Java
+  <https://docs.oracle.com/javase%2Ftutorial%2F/java/IandI/subclasses.html>
 
 -  Read about interfaces in Java  
-   <http://download.oracle.com/javase/tutorial/java/IandI/createinterface.html>
+   <https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html>
 
 -  Read about abstract methods and abstract classes in Java  
-   <http://download.oracle.com/javase/tutorial/java/IandI/abstract.html>
+   <https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html>
 
 ### Lab Objectives & Topics
 
